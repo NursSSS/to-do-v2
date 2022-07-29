@@ -1,6 +1,6 @@
 import { Length } from "class-validator";
 
-export class CreateTaskDto{
+export class CreateTaskDto {
     @Length(3, 20)
     title: string
 

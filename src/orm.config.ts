@@ -6,7 +6,7 @@ export const config: TypeOrmModuleOptions = {
     port: 3000,
     username: 'nursSSS',
     password: '123',
-    database: 'to-do',
+    database: 'to_do',
     entities: ['dist/**/*.entity{.ts,.js}'],
     synchronize: true,
 }

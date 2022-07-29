@@ -10,10 +10,10 @@ import { TaskModule } from './task/task.module';
     TypeOrmModule.forRoot({
     type: 'postgres',
     host: '127.0.0.1',
-    port: 3000,
+    port: 5432,
     username: 'postgres',
-    password: 'password',
-    database: 'to-do',
+    password: '123',
+    database: 'todo',
     entities: ['dist/**/*.entity{.ts,.js}'],
     synchronize: true,
     }), 

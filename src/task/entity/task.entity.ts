@@ -1,7 +1,8 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { ITask } from '../interface/interface';
 
 @Entity()
-export class TaskEntity {
+export class TaskEntity implements ITask{
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -12,5 +13,5 @@ export class TaskEntity {
   description: string;
 
   @Column({ default: false })
-  isActive: boolean;
+  isComplete: boolean;
 }
